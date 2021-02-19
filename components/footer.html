@@ -1,0 +1,28 @@
+<!-- Footer -->
+<footer class="footer container">
+    {% if site.params.footer.content %}
+    <div class="copyright">{{ site.params.footer.content | safe }}</div>
+    {% endif %}
+    {% if site.params.footer.links %}
+    <nav>
+        {% for link in site.params.footer.links %}
+        <a href="{{ link.url | relative_url }}"
+            {% if link.new_window %} target="_blank"{% endif %}
+            {% if link.new_window or link.no_follow %} rel="{% if link.new_window %}noopener {% endif %}{% if link.no_follow %}nofollow{% endif %}"{% endif %}
+            class="subtle-link">{{ link.label }}</a>
+        {% endfor %}
+    </nav>
+    {% endif %}
+    {% if site.params.footer.has_social %}
+    <div class="social-links">
+        {% for link in site.params.footer.social_links %}
+        {% if link %}
+        <a href="{{ link.url | relative_url }}"
+            {% if link.new_window %} target="_blank"{% endif %}
+            {% if link.new_window or link.no_follow %} rel="{% if link.new_window %}noopener {% endif %}{% if link.no_follow %}nofollow{% endif %}"{% endif %}
+            class="subtle-link">{{ link.label }}</a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</footer>
