@@ -1,9 +1,9 @@
 baseurl: "/"
-title: "Stackbit Vanilla Theme"
+title: "Mike Sturm"
 init_js: "js/init.js"
 params:
   header:
-    title: Stackbit Vanilla
+    title: Mike Sturm
     has_nav: true
     nav_links:
       - label: Home
@@ -16,7 +16,7 @@ params:
         url: /ipsum/
   footer:
     content: >-
-      &copy; Stackbit. All rights reserved. This Jamstack site was created with <a href="https://www.stackbit.com/?utm_source=deployed-footer" target="_blank" rel="noopener">Stackbit</a>. Create yours <a href="https://app.stackbit.com/create?theme=vanilla&utm_source=deployed-footer" target="_blank" rel="noopener">now</a>
+      &copy; Mike Sturm. All rights reserved.
     has_social: true
     social_links:
       - label: Twitter
